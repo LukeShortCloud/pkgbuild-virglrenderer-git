@@ -17,7 +17,7 @@ sha256sums=('b96b9ae7f9535030a1f60df88bad0fe44b36e78520d234211d74c4f529324fba')
 
 build() {
   cd virglrenderer-${_commit}
-  meson --prefix=/usr build # -Dtests=true
+  meson --prefix=/usr -Dvenus-experimental=true build
   ninja -C build
 }
 
