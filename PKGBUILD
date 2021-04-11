@@ -3,7 +3,7 @@
 
 pkgname=virglrenderer-git
 conflicts=(virglrenderer)
-pkgver=0.9.0.r1.a47c9901
+pkgver=0.9.0.r2.b96b9ae7
 pkgrel=1
 pkgdesc='A virtual 3D GPU library, that allows the guest operating system to use the host GPU to accelerate 3D rendering'
 arch=(x86_64)
@@ -11,9 +11,9 @@ url='https://virgil3d.github.io/'
 license=(MIT)
 depends=(libepoxy mesa)
 makedepends=(cmake gcc meson ninja pkg-config python)
-_commit=2cd0803574117cfbf71feb4f6d28f712d8184a8e
+_commit=67b196292831d5ad1d7e03c86e176c8007dae9b9
 source=(https://gitlab.freedesktop.org/virgl/virglrenderer/-/archive/${_commit}/virglrenderer-${_commit}.tar.bz2)
-sha256sums=('a47c9901b644c30e85ced1dc13850dca9b2cef9ba5e88b3f73bb491b8303502f')
+sha256sums=('b96b9ae7f9535030a1f60df88bad0fe44b36e78520d234211d74c4f529324fba')
 
 build() {
   cd virglrenderer-${_commit}
